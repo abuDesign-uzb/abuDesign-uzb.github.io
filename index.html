@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Логотипы и дизайн | Премиум • RU/UZ</title>
+  <meta name="description" content="Премиум дизайн логотипов, оформление товаров и Instagram. Быстро, аккуратно, с правками. Заказ через Telegram." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">✦</div>
+        <div class="brand__text">
+          <div class="brand__name" data-i18n="brand_name">Design Studio</div>
+          <div class="brand__tag" data-i18n="brand_tag">Логотипы • Товары • Instagram</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#services" data-i18n="nav_services">Услуги</a>
+        <a href="#portfolio" data-i18n="nav_portfolio">Портфолио</a>
+        <a href="#pricing" data-i18n="nav_pricing">Цены</a>
+        <a href="#order" data-i18n="nav_order">Заказать</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="chip" id="langBtn" type="button" aria-label="Language">RU</button>
+        <button class="chip" id="themeBtn" type="button" data-i18n="btn_theme">Тема</button>
+        <a class="chip chip--primary" id="tgTop" href="#" target="_blank" rel="noopener" data-i18n="btn_tg">
+          Telegram
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="pill" data-i18n="hero_pill">Премиум дизайн для любого магазина</div>
+
+          <h1 class="hero__title">
+            <span data-i18n="hero_title_1">Логотипы, карточки товара, баннеры</span>
+            <span class="grad" data-i18n="hero_title_2">в едином стиле</span>
+          </h1>
+
+          <p class="hero__lead" data-i18n="hero_lead">
+            Делаю современный дизайн под Instagram и маркетплейсы. Быстро, аккуратно, с правками.
+            Заказ — через Telegram.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#order" data-i18n="hero_cta_1">Оформить заказ</a>
+            <a class="btn btn--ghost" href="#portfolio" data-i18n="hero_cta_2">Смотреть портфолио</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item" data-i18n="trust_1">✅ 24–48 часов до первого варианта</div>
+            <div class="trust__item" data-i18n="trust_2">✅ Правки включены</div>
+            <div class="trust__item" data-i18n="trust_3">✅ Файлы PNG/JPG/SVG</div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="glass card">
+            <div class="card__title" data-i18n="hero_card_title">Быстрый расчёт</div>
+            <div class="card__sub" data-i18n="hero_card_sub">Ориентир по цене и готовое сообщение в Telegram.</div>
+
+            <form id="quickForm" class="form">
+              <label>
+                <span data-i18n="q_type">Что нужно?</span>
+                <select name="type">
+                  <option value="logo" data-i18n="q_logo">Логотип</option>
+                  <option value="product" data-i18n="q_product">Карточка товара</option>
+                  <option value="banner" data-i18n="q_banner">Баннер</option>
+                  <option value="insta" data-i18n="q_insta">Instagram-пакет</option>
+                </select>
+              </label>
+
+              <label>
+                <span data-i18n="q_qty">Количество (если нужно)</span>
+                <input name="qty" type="number" min="1" value="1" />
+              </label>
+
+              <label>
+                <span data-i18n="q_deadline">Срок</span>
+                <select name="deadline">
+                  <option value="normal" data-i18n="q_deadline_normal">Обычный</option>
+                  <option value="fast" data-i18n="q_deadline_fast">Срочно</option>
+                </select>
+              </label>
+
+              <button class="btn btn--primary" type="submit" data-i18n="q_calc">Посчитать и открыть Telegram</button>
+              <div class="result" id="quickResult" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="sparkles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title" data-i18n="services_title">Услуги</h2>
+
+        <div class="cards">
+          <article class="card hover glow">
+            <h3 data-i18n="s1_title">Логотип и фирменный стиль</h3>
+            <p class="muted" data-i18n="s1_text">Лого с нуля + цвета, шрифты, стиль. Под печать и соцсети.</p>
+            <ul class="list">
+              <li data-i18n="s1_li1">PNG/JPG/SVG</li>
+              <li data-i18n="s1_li2">2–3 варианта</li>
+              <li data-i18n="s1_li3">Правки включены</li>
+            </ul>
+          </article>
+
+          <article class="card hover glow">
+            <h3 data-i18n="s2_title">Оформление товара</h3>
+            <p class="muted" data-i18n="s2_text">Чистый фон, обтравка, плашки “скидка/хит/новинка”, стиль магазина.</p>
+            <ul class="list">
+              <li data-i18n="s2_li1">Маркетплейсы / Instagram</li>
+              <li data-i18n="s2_li2">Шаблоны под серию</li>
+              <li data-i18n="s2_li3">Экономит время</li>
+            </ul>
+          </article>
+
+          <article class="card hover glow">
+            <h3 data-i18n="s3_title">Баннеры и реклама</h3>
+            <p class="muted" data-i18n="s3_text">Посты и сторис, акции, прайс-картинки. Тексты и композиция.</p>
+            <ul class="list">
+              <li data-i18n="s3_li1">Под нужный размер</li>
+              <li data-i18n="s3_li2">Единый стиль</li>
+              <li data-i18n="s3_li3">Быстро и аккуратно</li>
+            </ul>
+          </article>
+
+          <article class="card hover glow">
+            <h3 data-i18n="s4_title">Instagram-пакет</h3>
+            <p class="muted" data-i18n="s4_text">Аватар, хайлайты, шаблоны постов/сторис, стиль ленты.</p>
+            <ul class="list">
+              <li data-i18n="s4_li1">Быстрый старт</li>
+              <li data-i18n="s4_li2">Шаблоны для контента</li>
+              <li data-i18n="s4_li3">Увеличивает доверие</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section__row">
+          <h2 class="section__title" data-i18n="portfolio_title">Портфолио</h2>
+          <p class="muted" data-i18n="portfolio_sub">Нажми на карточку — откроется просмотр. Заменишь на свои работы.</p>
+        </div>
+
+        <div class="grid" id="portfolioGrid">
+          <!-- placeholders, replace images later -->
+          <button class="shot" data-title="Logo • Fashion" data-src="" type="button">
+            <div class="shot__img ph">LOGO</div>
+            <div class="shot__cap">Logo • Fashion</div>
+          </button>
+
+          <button class="shot" data-title="Product Card • Tech" data-src="" type="button">
+            <div class="shot__img ph">CARD</div>
+            <div class="shot__cap">Product • Tech</div>
+          </button>
+
+          <button class="shot" data-title="Banner • Sale" data-src="" type="button">
+            <div class="shot__img ph">BANNER</div>
+            <div class="shot__cap">Banner • Sale</div>
+          </button>
+
+          <button class="shot" data-title="Instagram Pack" data-src="" type="button">
+            <div class="shot__img ph">INSTA</div>
+            <div class="shot__cap">Instagram Pack</div>
+          </button>
+
+          <button class="shot" data-title="Logo • Food" data-src="" type="button">
+            <div class="shot__img ph">LOGO</div>
+            <div class="shot__cap">Logo • Food</div>
+          </button>
+
+          <button class="shot" data-title="Product • Cosmetics" data-src="" type="button">
+            <div class="shot__img ph">CARD</div>
+            <div class="shot__cap">Product • Cosmetics</div>
+          </button>
+
+          <button class="shot" data-title="Banner • New" data-src="" type="button">
+            <div class="shot__img ph">BANNER</div>
+            <div class="shot__cap">Banner • New</div>
+          </button>
+
+          <button class="shot" data-title="Logo • Construction" data-src="" type="button">
+            <div class="shot__img ph">LOGO</div>
+            <div class="shot__cap">Logo • Construction</div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 class="section__title" data-i18n="pricing_title">Цены</h2>
+        <p class="muted" data-i18n="pricing_sub">Цены ориентир. Итог зависит от сложности и сроков.</p>
+
+        <div class="pricing">
+          <article class="card price hover">
+            <div class="price__top">
+              <h3 data-i18n="p1_title">Лого — Старт</h3>
+              <span class="tag" data-i18n="p_tag_basic">базовый</span>
+            </div>
+            <div class="price__sum">от 250 000 сум</div>
+            <ul class="list">
+              <li data-i18n="p1_li1">1–2 варианта</li>
+              <li data-i18n="p1_li2">1 круг правок</li>
+              <li data-i18n="p1_li3">PNG + JPG</li>
+            </ul>
+            <button class="btn btn--ghost" data-order="logo_start" type="button" data-i18n="btn_order">Заказать</button>
+          </article>
+
+          <article class="card price price--hot hover">
+            <div class="price__top">
+              <h3 data-i18n="p2_title">Лого — Бренд</h3>
+              <span class="tag tag--hot" data-i18n="p_tag_best">лучший</span>
+            </div>
+            <div class="price__sum">от 450 000 сум</div>
+            <ul class="list">
+              <li data-i18n="p2_li1">2–3 варианта</li>
+              <li data-i18n="p2_li2">2 круга правок</li>
+              <li data-i18n="p2_li3">PNG + JPG + SVG</li>
+            </ul>
+            <button class="btn btn--primary" data-order="logo_brand" type="button" data-i18n="btn_order">Заказать</button>
+          </article>
+
+          <article class="card price hover">
+            <div class="price__top">
+              <h3 data-i18n="p3_title">Карточка товара</h3>
+              <span class="tag" data-i18n="p_tag_piece">за штуку</span>
+            </div>
+            <div class="price__sum">от 50 000 сум</div>
+            <ul class="list">
+              <li data-i18n="p3_li1">Чистый фон / обтравка</li>
+              <li data-i18n="p3_li2">Текст, плашки</li>
+              <li data-i18n="p3_li3">Размер под площадку</li>
+            </ul>
+            <button class="btn btn--ghost" data-order="product_design" type="button" data-i18n="btn_order">Заказать</button>
+          </article>
+
+          <article class="card price hover">
+            <div class="price__top">
+              <h3 data-i18n="p4_title">Баннер</h3>
+              <span class="tag" data-i18n="p_tag_fast">быстро</span>
+            </div>
+            <div class="price__sum">от 80 000 сум</div>
+            <ul class="list">
+              <li data-i18n="p4_li1">Пост / сторис</li>
+              <li data-i18n="p4_li2">Адаптация размеров</li>
+              <li data-i18n="p4_li3">Единый стиль</li>
+            </ul>
+            <button class="btn btn--ghost" data-order="banners" type="button" data-i18n="btn_order">Заказать</button>
+          </article>
+
+          <article class="card price hover">
+            <div class="price__top">
+              <h3 data-i18n="p5_title">Instagram-пакет</h3>
+              <span class="tag" data-i18n="p_tag_pack">пакет</span>
+            </div>
+            <div class="price__sum">от 600 000 сум</div>
+            <ul class="list">
+              <li data-i18n="p5_li1">Аватар + хайлайты</li>
+              <li data-i18n="p5_li2">Шаблоны пост/сторис</li>
+              <li data-i18n="p5_li3">Стиль ленты</li>
+            </ul>
+            <button class="btn btn--ghost" data-order="insta_pack" type="button" data-i18n="btn_order">Заказать</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section class="section section--alt" id="order">
+      <div class="container order">
+        <div class="order__left">
+          <h2 class="section__title" data-i18n="order_title">Оформить заказ</h2>
+          <p class="muted" data-i18n="order_sub">
+            Заполни форму — я сформирую готовое сообщение для Telegram.
+          </p>
+
+          <div class="steps">
+            <div class="step"><span>1</span><div data-i18n="step_1">Опиши задачу</div></div>
+            <div class="step"><span>2</span><div data-i18n="step_2">Пришли примеры (если есть)</div></div>
+            <div class="step"><span>3</span><div data-i18n="step_3">Подтвердим цену и срок</div></div>
+          </div>
+
+          <div class="note">
+            <div class="note__title" data-i18n="note_title">Что подготовить заранее</div>
+            <ul class="list">
+              <li data-i18n="note_li1">Название магазина и ниша</li>
+              <li data-i18n="note_li2">Цвета/стиль и примеры</li>
+              <li data-i18n="note_li3">Где будет использоваться (Instagram/упаковка/вывеска)</li>
+              <li data-i18n="note_li4">Срок</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="order__right">
+          <div class="glass card">
+            <div class="card__title" data-i18n="form_title">Форма заказа</div>
+            <form id="orderForm" class="form">
+              <label>
+                <span data-i18n="f_name">Имя</span>
+                <input name="name" required placeholder="Alex" />
+              </label>
+
+              <label>
+                <span data-i18n="f_shop">Название магазина</span>
+                <input name="shop" required placeholder="My Shop" />
+              </label>
+
+              <label>
+                <span data-i18n="f_type">Тип работы</span>
+                <select name="type">
+                  <option value="logo" data-i18n="q_logo">Логотип</option>
+                  <option value="product" data-i18n="q_product">Карточка товара</option>
+                  <option value="banner" data-i18n="q_banner">Баннер</option>
+                  <option value="insta" data-i18n="q_insta">Instagram-пакет</option>
+                </select>
+              </label>
+
+              <label>
+                <span data-i18n="f_desc">Описание задачи</span>
+                <textarea name="desc" rows="4" required placeholder="Что нужно сделать? Какие цвета/стиль?"></textarea>
+              </label>
+
+              <div class="row2">
+                <label>
+                  <span data-i18n="f_deadline">Срок</span>
+                  <select name="deadline">
+                    <option value="normal" data-i18n="q_deadline_normal">Обычный</option>
+                    <option value="fast" data-i18n="q_deadline_fast">Срочно</option>
+                  </select>
+                </label>
+
+                <label>
+                  <span data-i18n="f_budget">Бюджет (по желанию)</span>
+                  <input name="budget" placeholder="например 400 000 сум" />
+                </label>
+              </div>
+
+              <button class="btn btn--primary" type="submit" data-i18n="f_submit">Сформировать и открыть Telegram</button>
+              <div class="result" id="orderResult" aria-live="polite"></div>
+            </form>
+
+            <div class="small muted" data-i18n="form_hint">
+              Telegram иногда не вставляет текст автоматически — но чат откроется, и сообщение будет готово для копирования.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section__title" data-i18n="faq_title">FAQ</h2>
+        <div class="faq">
+          <details class="card">
+            <summary data-i18n="faq_q1">Сколько времени занимает?</summary>
+            <div class="muted" data-i18n="faq_a1">Обычно 24–48 часов на первый вариант. Срочно — по договоренности.</div>
+          </details>
+          <details class="card">
+            <summary data-i18n="faq_q2">Какие файлы я получу?</summary>
+            <div class="muted" data-i18n="faq_a2">PNG/JPG для соцсетей + SVG (вектор) для печати (в пакете “Бренд”).</div>
+          </details>
+          <details class="card">
+            <summary data-i18n="faq_q3">Сколько правок?</summary>
+            <div class="muted" data-i18n="faq_a3">Зависит от пакета. Обычно 1–2 круга правок включены.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__row">
+        <div>© <span id="year"></span> <span data-i18n="footer_name">Design Studio</span></div>
+        <div class="muted" data-i18n="footer_note">Заказ через Telegram</div>
+      </div>
+    </footer>
+
+    <!-- Floating Telegram button -->
+    <a class="fab" id="tgFab" href="#" target="_blank" rel="noopener" aria-label="Telegram">✈️</a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox__backdrop" data-close="1"></div>
+      <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Portfolio preview">
+        <button class="lightbox__close" type="button" data-close="1" aria-label="Close">✕</button>
+        <div class="lightbox__title" id="lbTitle">Preview</div>
+        <div class="lightbox__content" id="lbContent"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
